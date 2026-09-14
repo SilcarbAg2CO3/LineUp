@@ -1,0 +1,17 @@
+/src
+ ├── assets/             # Fichiers statiques (images, logos, styles globaux)
+ ├── components/         # Composants React réutilisables
+ │    ├── common/        # Boutons, modales, champs de formulaire
+ │    └── layout/        # Menu de navigation latéral (Sidebar), barre supérieure (Navbar)
+ ├── pages/              # Composants représentant les pages complètes
+ │    ├── AccueilAdmin.jsx   # Tableau de bord principal (similaire à la Page Accueil de la démo)
+ │    ├── GestionProduits.jsx # Administration des produits (similaire à la Page des produits )
+ │    ├── GestionUtilisateurs.jsx
+ │    └── LoginAdmin.jsx
+ ├── services/           # Fonctions pour les appels API (requêtes HTTP vers le backend)
+ │    ├── authService.js
+ │    └── productService.js
+ ├── contexts/           # Gestion de l'état global (ex: stocker le token de l'administrateur connecté)
+ │    └── AuthContext.jsx
+ ├── App.jsx             # Configuration principale des routes avec <Routes> et <Route> 
+ └── main.jsx            # Point d'entrée de l'application englobé par <BrowserRouter>

@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "LineUp",
+    "slug": "LineUp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/LineUpLogo.jpg",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/LineUpLogo.jpg",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}

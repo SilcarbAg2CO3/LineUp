@@ -1,0 +1,142 @@
+/* --- VARIABLES GLOBALES (Couleurs de festival) --- */
+:root {
+  --primary: #F98C2F;
+  --dark: #05061A;
+  --bg: #F4F7F6;
+  --surface: #ffffff;
+  --text-dark: #333333;
+  --text-muted: #666666;
+  --border: #EEEEEE;
+  --danger: #F44336;
+  --success: #4CAF50;
+  --info: #2196F3;
+}
+
+/* --- TYPOGRAPHIE --- */
+.page-title {
+  color: var(--dark);
+  margin: 0 0 5px 0;
+}
+
+.page-subtitle {
+  color: var(--text-muted);
+  margin-bottom: 30px;
+}
+
+/* --- CONTENEURS (Cartes) --- */
+.card {
+  background-color: var(--surface);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.card-padded {
+  background-color: var(--surface);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  padding: 20px;
+}
+
+/* --- BOUTONS --- */
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #e07a20;
+  transform: translateY(-2px); /* effet de soulèvement au survol */
+}
+
+.btn-danger {
+  background: none;
+  border: none;
+  color: var(--danger);
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.btn-danger:hover {
+  color: #d32f2f;
+}
+
+.btn-info {
+  background: none;
+  border: none;
+  color: var(--info);
+  cursor: pointer;
+  margin-right: 10px;
+  transition: color 0.2s;
+}
+
+.btn-info:hover {
+  color: #1976d2;
+}
+
+/* --- FORMULAIRES --- */
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #CCC;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: var(--text-muted);
+  font-weight: bold;
+}
+
+/* --- TABLEAUX --- */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.admin-table th {
+  background-color: var(--dark);
+  color: white;
+  padding: 15px;
+}
+
+.admin-table td {
+  padding: 15px;
+  border-bottom: 1px solid var(--border);
+}
+
+.admin-table tr:hover td {
+  background-color: #fafafa; /* met la ligne en surbrillance au survol */
+}
+
+/* --- CUSTOM SCROLLBAR --- */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg); 
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary); /* devient orange au survol */
+}
